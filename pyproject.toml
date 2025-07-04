@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "superglue-magic-leap"
+version = "0.1.0"
+authors = [
+    { name="Manas Jashnani", email="mjashnani@aigarage.ca" },
+]
+description = "A fork of the SuperGlue Pretrained Network for our project."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "torch>=1.0",
+    "opencv-python"
+]
+
+[tool.setuptools]
+packages = ["models"]
